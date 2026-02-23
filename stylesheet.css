@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
+
+:root {
+  --brand: #cc0100;
+  --brand-dark: #a30000;
+  --secondary: #012b5c;
+  --bg-soft: #f0fdfa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body p{
+   color: #012b5c;
+   font-size: 20px;
+}
+
+.hero {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  background: url("chalkboard.png") right bottom / cover no-repeat;
+  height: 500px;
+}
+
+.hero .btn{
+    background-color: red;
+}
+
+.hero h1{
+    color: #f4f4f4;
+    font-family: "Fredericka the Great", serif;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: 1px;
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.35),
+      0 0 2px rgba(255, 255, 255, 0.25),
+      1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.hero h2{
+    color: #e8e8e8;
+    font-family: "Fredericka the Great", serif;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.3),
+      0 0 2px rgba(255, 255, 255, 0.2),
+      1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px){
+    .hero h1{
+         font-size: 90px;
+    }
+
+    .hero h2{
+        font-size: 48px;
+
+    }
+}
+
+.hero .sketchy {
+    font-family: "Cabin Sketch", "Fredericka the Great", serif;
+}
+
+.hero .translate-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+    margin-top: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.hero .translate-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+#aboutMe{
+    padding: 48px 0;
+}
+
+@media (min-width: 1024px){
+    #aboutMe{
+         padding: 96px 0;
+    }
+}
+
+#aboutMe h2, #map h2, #myFamily h2, #faqs h2{
+    font-size: 48px;
+    color: #cc0100;
+}
+
+#faqs{
+    padding-top: 48px;
+}
+
+@media (min-width: 1024px){
+    #faqs{
+         padding-top: 96px;
+    }
+}
+
+#faqs button, #faqs p{
+    font-size: 20px;
+}
+
+#aboutMe .headshot {
+    background: url("headshot.jpg") center center / cover no-repeat;
+    height: 300px;
+    width: 300px;
+}
+
+@media (min-width: 768px){
+    #aboutMe .headshot{
+        height: 200px;
+        width:  200px;
+    }
+}
+
+@media (min-width: 992px){
+    #aboutMe .headshot{
+        height: 250px;
+        width:  250px;
+    }
+}
+
+@media (min-width: 1200px){
+    #aboutMe .headshot{
+        height: 350px;
+        width:  350px;
+    }
+}
+
+@media (min-width: 1400px){
+    #aboutMe .headshot{
+        height: 400px;
+        width:  400px;
+    }
+}
+
+#myFamily img{
+    width: 300px;
+    height: 300px;
+
+}
+
+@media (min-width: 768px){
+    #myFamily img{
+        height: 200px;
+        width:  200px;
+    }
+}
+
+@media (min-width: 992px){
+    #myFamily img{
+        height: 250px;
+        width:  250px;
+    }
+}
+
+@media (min-width: 1200px){
+    #myFamily img{
+        height: 350px;
+        width:  350px;
+    }
+}
+
+@media (min-width: 1400px){
+    #myFamily img{
+        height: 400px;
+        width:  400px;
+    }
+}
+
+#map{
+    padding: 48px 0;
+
+}
+
+@media (min-width: 1024px){
+    #map{
+         padding: 96px 0;
+    }
+}
+
+.map {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    transform: translateY(-70px);
+}
+
+#faqs .accordion-item {
+    border: 1px solid var(--secondary);
+}
+
+#faqs .accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23012b5c' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+#faqs .accordion-button {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+#faqs .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: var(--brand);
+    box-shadow: none;
+}
+
+#faqs .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(1, 43, 92, 0.25);
+}
+
+#faqs .accordion-button::after {
+    filter: none;
+}
+
+#faqs .accordion-body {
+    color: var(--secondary);
+    border-top: 0;
+}
+
+#faqs .accordion-item {
+    border: 0;
+}
