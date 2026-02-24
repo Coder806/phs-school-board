@@ -25,10 +25,6 @@ body p{
   height: 500px;
 }
 
-.hero .btn{
-    background-color: red;
-}
-
 .hero h1{
     color: #f4f4f4;
     font-family: "Fredericka the Great", serif;
@@ -116,6 +112,7 @@ body p{
     background: url("headshot.jpg") center center / cover no-repeat;
     height: 300px;
     width: 300px;
+    border: 5px solid var(--secondary);
 }
 
 @media (min-width: 768px){
@@ -149,6 +146,7 @@ body p{
 #myFamily img{
     width: 300px;
     height: 300px;
+    border: 5px solid var(--secondary);
 
 }
 
